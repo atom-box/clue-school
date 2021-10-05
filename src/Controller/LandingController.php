@@ -12,10 +12,13 @@ class LandingController extends AbstractController
     /**
      * @Route("/", name="landing")
      */
-    public function list(): Response
+    public function showLanding(): Response
     {
         // list() DOES NOT NEED TO CALL: THE ROUTE SETS IT IN MOTION
         // return $this->render('product/index.html.twig', []); 
-        return new Response('<h1>Atlas Improv</h1>');
+        // return new Response('<h1>Atlas Improv</h1>');
+
+        return $this->render('landing/index.html.twig', [ ]);
+
     }
 }
