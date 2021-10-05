@@ -5,37 +5,14 @@
 
 <body class="w3-black">
 
-<!-- Icon Bar (Sidebar - hidden on small screens) -->
-<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
-  <!-- Avatar image in top left corner -->
-  <img src="images/560-800x800-grayscale.jpg" style="width:100%">
-  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
-    <i class="fa fa-home w3-xxlarge"></i>
-    <p>HOME</p>
-  </a>
-  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-clock-o w3-xxlarge"></i>
-    <p>STUDY ALARMS</p>
-  </a>
-  <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-cubes w3-xxlarge"></i>
-    <p>CORNELL NOTES</p>
-  </a>
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-commenting-o w3-xxlarge"></i>
-    <p>CONTACT</p>
-  </a>
-</nav>
 
-<!-- Navbar on small screens (Hidden on medium and large screens) -->
-<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
-  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
-    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
-    <a href="http://example.com" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
-    <a href="https://state.gov" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
-    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
-  </div>
-</div>
+
+
+
+{{ include('landing/_sidebar.html.twig') }}
+
+
+
 
 <!-- Page Content -->
 <div class="w3-padding-large" id="main">
@@ -60,10 +37,10 @@
     <div class="w3-row-padding" style="margin:0 -16px">
       <div class="w3-half w3-margin-bottom">
         <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-          <li class="w3-dark-grey w3-xlarge w3-padding-32">Task Timer</li>
-          <li class="w3-padding-16">Similar to Pomodoro timers</li>
-          <li class="w3-padding-16">Saves you the headspace of queueing tasks</li>
-          <li class="w3-padding-16">When the time is up, reminds you what to do next</li>
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">The Boss of Me</li>
+        <li class="w3-padding-16">Free up headspace</li>
+        <li class="w3-padding-16">Stop spinning your wheels</li>
+          <li class="w3-padding-16">Simple to configure and more flexible than a pomodoro timer</li>
           <li class="w3-padding-16">Hazah!</li>
           <li class="w3-light-grey w3-padding-24">
             <button class="w3-button w3-white w3-padding-large w3-hover-black">Go</button>
@@ -124,14 +101,8 @@
   <!-- End Contact Section -->
   </div>
   
-    <!-- Footer -->
-  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
-    <a href="https://github.com/atom-box"><i class="fa fa-github-square w3-hover-opacity"></i></a>
-    <a href="https://twitter.com/MisterGenest"><i class="fa fa-twitter w3-hover-opacity"></i></a>
-        <a href="https://www.linkedin.com/in/evan-genest-b6648380/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
-    <p class="w3-medium">Lightweight CSS Template by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
-  <!-- End footer -->
   </footer>
+  {{ include('landing/_footer.html.twig') }}
 
 <!-- END PAGE CONTENT -->
 </div>
