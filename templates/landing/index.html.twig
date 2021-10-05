@@ -1,110 +1,179 @@
-
-
 {{ include('_prerequisites.html.twig') }}
-
 
 <body class="w3-black">
 
+    {{ include('landing/_sidebar.html.twig') }}
 
+    <!-- Page Content -->
+    <div class="w3-padding-large" id="main">
+        <!-- Header/Home -->
+        <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+            <p>
+                Looking for 
+                <a href="https://www.avid.org/">
+                    AVID.org
+                </a>
+                ?
+            </p>
+            <h1 class="w3-jumbo">
+                <span class="w3-hide-small">
+                    Free Study Tools
+                </h1>
+                <p>
+                    A place where you can focus
+                </p>
+                <img src="images/560-800x800-grayscale.jpg" alt="You need good shoes" class="w3-image" width="992" height="1108"></header>
 
+                <!-- About Section -->
+                <!-- THIS CLASS IS XXXd OUT by me.  If you restore the id a whole PHOTOs section will insert itself after this div -->
+                <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="xxxabout">
+                    <h2 class="w3-text-light-grey">
+                        Truly Free
+                    </h2>
+                    <hr style="width:200px" class="w3-opacity">
+                        <p>
+                            Both of these tools were made to help me study. I hope that others can enjoy them too. I'm not trying to profit from this site in any way. I learned about Cornell Note Taking from 
+                            <a href="https://avid.org">
+                                Avid
+                            </a>
+                            . I'm a fan of studying in general. 
+                                
+                        </p>
 
+                        <!-- Grid for tools -->
+                        <h3 class="w3-padding-16 w3-text-light-grey">
+                            Study tools
+                        </h3>
+                        <div class="w3-row-padding" style="margin:0 -16px">
+                            <div class="w3-half w3-margin-bottom">
+                                <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+                                    <li class="w3-dark-grey w3-xlarge w3-padding-32">
+                                        The Boss of Me
+                                    </li>
+                                    <li class="w3-padding-16">
+                                        Simple to configure and more flexible than a pomodoro timer
+                                    </li>
+                                    <li class="w3-padding-16">
+                                        Free up headspace
+                                    </li>
+                                    <li class="w3-padding-16">
+                                        Stop spinning your wheels
+                                    </li>
+                                    <li class="w3-padding-16">
+                                        Hazah!
+                                    </li>
+                                    <li class="w3-light-grey w3-padding-24">
+                                        <button class="w3-button w3-white w3-padding-large w3-hover-black">
+                                            Go
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
 
-{{ include('landing/_sidebar.html.twig') }}
+                            <div class="w3-half">
+                                <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+                                    <li class="w3-dark-grey w3-xlarge w3-padding-32">
+                                        Slow Learn
+                                    </li>
+                                    <li class="w3-padding-16">
+                                        Take notes on your phone or computer
+                                    </li>
+                                    <li class="w3-padding-16">
+                                        Proven four step process
+                                    </li>
+                                    <li class="w3-padding-16">
+                                        Forces you to repeat and organize
+                                    </li>
+                                    <li class="w3-padding-16">
+                                        Cornell Notes were invented at Cornell College
+                                    </li>
+                                    <li class="w3-light-grey w3-padding-24">
+                                        <button class="w3-button w3-white w3-padding-large w3-hover-black">
+                                            Go
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- End Grid/tool tables -->
+                            <br></div>
 
+                        <!-- End About Section -->
+                        </div>
 
+                        <!-- Contact Section -->
+                        <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+                            <h2 class="w3-text-light-grey">
+                                About Evan Genest
+                            </h2>
+                            <hr style="width:200px" class="w3-opacity">
 
+                                <div class="w3-section">
+                                    <p>
+                                        <i class="fa fa-etsy fa-fw w3-text-white w3-xxlarge w3-margin-right"></i>
+                                        I don't get much email. Drop a line to say Hi: maybe tell how you found this site.
+                                    </p>
+                                    <p>
+                                        <i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i>
+                                        Madison WI
+                                    </p>
+                                    <p>
+                                        <i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i>
+                                        Phone: 608-228-949three
+                                    </p>
+                                    <p>
+                                        <i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"></i>
+                                        Email: genest 
+                                        <strong>
+                                            dot
+                                        </strong>
+                                        1 
+                                        <strong>
+                                            at
+                                        </strong>
+                                        osu 
+                                        <strong>
+                                            dot
+                                        </strong>
+                                        edu
+                                    </p>
+                                    <p>
+                                        <i class="fa fa-grav fa-fw w3-text-white w3-xxlarge w3-margin-right"></i>
+                                        I'm a web developer. Check out my other things at 
+                                        <a href="https://littlefurnace.com">
+                                            Little Furnace
+                                        </a>
+                                    </p>
+                                </div>
+                                <br>
+                                    <p>
+                                        Todo: Preserve this form for consistancy across the site. Move this form to page two. Adapt its style to both of the apps.
+                                    </p>
 
-<!-- Page Content -->
-<div class="w3-padding-large" id="main">
-  <!-- Header/Home -->
-  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
-      <p>Looking for <a href="https://www.avid.org/">AVID.org</a>?</p>
-    <h1 class="w3-jumbo"><span class="w3-hide-small">Free Study Tools</h1>
-    <p>A place where you can focus</p>
-    <img src="images/560-800x800-grayscale.jpg" alt="You need good shoes" class="w3-image" width="992" height="1108">
-  </header>
+                                    <form action="/action_page.php" target="_blank">
+                                        <p>
+                                            <input class="w3-input w3-padding-16" type="text" placeholder="nil" required name="Name"></p>
+                                            <p>
+                                                <input class="w3-input w3-padding-16" type="text" placeholder="nada" required name="Email"></p>
+                                                <p>
+                                                    <input class="w3-input w3-padding-16" type="text" placeholder="empty" required name="Subject"></p>
+                                                    <p>
+                                                        <input class="w3-input w3-padding-16" type="text" placeholder="void" required name="Message"></p>
+                                                        <p>
+                                                            <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+                                                                <i class="fa fa-cc-mastercard"></i>
+                                                                GOES NOWHERE
+                                                                        
+                                                            </button>
+                                                        </p>
+                                                    </form>
+                                                <!-- End Contact Section -->
+                                                </div>
 
-  <!-- About Section -->
-  <!-- THIS CLASS IS XXXd OUT by me.  If you restore the id a whole PHOTOs section will insert itself after this div -->
-  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="xxxabout">
-    <h2 class="w3-text-light-grey">Truly Free</h2>
-    <hr style="width:200px" class="w3-opacity">
-    <p>Both of these tools were made to help me study. I hope that others can enjoy them too. I'm not trying to profit from this site in any way. I learned about Cornell Note Taking from <a href="https://avid.org"> Avid</a>. I'm a fan of studying in general. 
-    </p>
+                                            </footer>
+                                            {{ include('landing/_footer.html.twig') }}
 
-        <!-- Grid for tools -->
-    <h3 class="w3-padding-16 w3-text-light-grey">Study tools</h3>
-    <div class="w3-row-padding" style="margin:0 -16px">
-      <div class="w3-half w3-margin-bottom">
-        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-          <li class="w3-dark-grey w3-xlarge w3-padding-32">The Boss of Me</li>
-        <li class="w3-padding-16">Free up headspace</li>
-        <li class="w3-padding-16">Stop spinning your wheels</li>
-          <li class="w3-padding-16">Simple to configure and more flexible than a pomodoro timer</li>
-          <li class="w3-padding-16">Hazah!</li>
-          <li class="w3-light-grey w3-padding-24">
-            <button class="w3-button w3-white w3-padding-large w3-hover-black">Go</button>
-          </li>
-        </ul>
-      </div>
+                                        <!-- END PAGE CONTENT -->
+                                        </div>
 
-      <div class="w3-half">
-        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-            <li class="w3-dark-grey w3-xlarge w3-padding-32">Cornell Notes</li>
-            <li class="w3-padding-16">Take notes on your phone or computer</li>
-            <li class="w3-padding-16">Proven four step process</li>
-            <li class="w3-padding-16">Forces you to repeat and organize</li>
-            <li class="w3-padding-16">Tebrikler!</li>
-            <li class="w3-light-grey w3-padding-24">
-              <button class="w3-button w3-white w3-padding-large w3-hover-black">Go</button>
-            </li>
-          </ul>
-        </div>
-    <!-- End Grid/tool tables -->
-<br>
-    
-
-    
-
-    </div>
-     
-  <!-- End About Section -->
-  </div>
-
-
-
-  <!-- Contact Section -->
-  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
-    <h2 class="w3-text-light-grey">About Evan Genest</h2>
-    <hr style="width:200px" class="w3-opacity">
-
-    <div class="w3-section">
-      <p><i class="fa fa-etsy fa-fw w3-text-white w3-xxlarge w3-margin-right"></i>I don't get much email. Drop a line to say Hi: maybe tell how you found this site.</p>
-      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i>Madison WI</p>
-      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: 608-228-949three</p>
-      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: genest <strong>dot</strong> 1 <strong>at</strong> osu <strong>dot</strong> edu</p>
-      <p><i class="fa fa-grav fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> I'm a web developer. Check out my other things at <a href="https://littlefurnace.com">Little Furnace</a></p>
-    </div><br>
-    <p>Todo: Preserve this form for consistancy across the site. Move this form to page two. Adapt its style to both of the apps.</p>
-
-    <form action="/action_page.php" target="_blank">
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="nil" required name="Name"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="nada" required name="Email"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="empty" required name="Subject"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="void" required name="Message"></p>
-      <p>
-        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
-          <i class="fa fa-cc-mastercard"></i> GOES NOWHERE
-        </button>
-      </p>
-    </form>
-  <!-- End Contact Section -->
-  </div>
-  
-  </footer>
-  {{ include('landing/_footer.html.twig') }}
-
-<!-- END PAGE CONTENT -->
-</div>
-
-</body>
+                                    </body>
+                                    
