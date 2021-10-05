@@ -1,17 +1,25 @@
 ## Stack
 
-This is a Symfony project.  
+This is a Symfony 5 project.  
 
 ## URL
 
 This is deployed at http://clue.school
 
-## This page is a placeholder for a School Parent Teacher Conferences Twilio SMS tool idea of  mine
+## Clue & Clueless
 
-Eventually this URL will host a School Parent Teacher Conferences Twilio SMS tool. But for now though, I am holding this space by putting my own Getting Things Done app here.
+I have some ideas for school technology I'd like to try.
+I have purchased the URLs [https://clueless.school](https://clueless.school )  and [https://clue.school](https://clue.school) while I build.
 
-## How to take Cornell Notes
+## App 1 is multi-task timer
 
-What's a good way to take cornell notes? Again, that's my other page.  ZumTum Cornell Notes, my app for taking notes in school is going to be at the similarly named http://clueless.school.  This page you are on now is all about teacher to parent engagement.
+I find my phone and the online pomodoro timers to be too slow to configure.  This is my app that allows for rapid input of task names and durations.
 
+## App 2 is how to takee Cornell Notes in a browser
+
+What's a good way to take Cornell Notes? This! ZumTum Cornell Notes was my previous app to do this.
+
+## It's live
+
+It will take the rest of October to make this run well.  The site is [https://clue.school](https://clue.school) 
 
