@@ -5,7 +5,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-class TimerController extends AbstractController
+class TimerViewController extends AbstractController
 {
     /**
      * @Route("/timer", name="timer")

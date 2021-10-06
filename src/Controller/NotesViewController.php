@@ -15,7 +15,7 @@ use Symfony\Component\Security\Csrf\TokenStorage\SessionTokenStorage;
 
 
 
-class NotesController extends AbstractController
+class NotesViewController extends AbstractController
 {
     /**
      * @Route("/notes", name="notes")
