@@ -1,13 +1,13 @@
 <?php
-require 'Calculator.php';
+require 'FakeClass.php';
  
-class CalculatorTests extends PHPUnit_Framework_TestCase
+class FakeClassTests extends PHPUnit_Framework_TestCase
 {
     private $calculator;
  
     protected function setUp()
     {
-        $this->calculator = new Calculator();
+        $this->calculator = new FakeClass();
     }
  
     protected function tearDown()
