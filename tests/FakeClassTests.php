@@ -1,16 +1,18 @@
 <?php
+
+use PHPUnit\Framework\TestCase;
 require 'FakeClass.php';
  
-class FakeClassTests extends PHPUnit_Framework_TestCase
+class FakeClassTests extends TestCase
 {
     private $calculator;
  
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->calculator = new FakeClass();
     }
  
-    protected function tearDown()
+    protected function tearDown(): void
     {
         $this->calculator = NULL;
     }
