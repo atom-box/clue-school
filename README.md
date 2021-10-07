@@ -8,7 +8,7 @@ This is deployed at http://clue.school
 
 ## Two apps
 
-### App 1 is multi-task timer
+### App 1 is a multi-task timer
 
 This is an improved pomodoro timer.  It generates a serial pomodoro that can be easily configured with a .json file.  This part is about 30% built. 
 
