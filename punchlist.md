@@ -1,7 +1,7 @@
-generate the divs as a loop in twig
-
-generate the divs from 2d array, as string and minutes on newlines, with quotes and stuff
-
+"""commit
+color of wunderbar to black eats gray not green eats white
+make math algorithm to convert minutes into 100 chunked-milliseconds
+"""
 build a single standalone wunderbar that can count down correctly. make it decent enough
 
 generate wunderbars for every one of those divs
@@ -40,3 +40,6 @@ how does timer work in egg.timer.com
 how does timer work in Vue
 
 add w3 schools javascript intwig appropriate way
+generate the divs as a loop in twig
+
+generate the divs from 2d array, as string and minutes on newlines, with quotes and stuff
