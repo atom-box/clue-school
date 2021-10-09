@@ -14,10 +14,6 @@ class LandingViewController extends AbstractController
      */
     public function showLanding(): Response
     {
-        // list() DOES NOT NEED TO CALL: THE ROUTE SETS IT IN MOTION
-        // return $this->render('product/index.html.twig', []); 
-        // return new Response('<h1>Atlas Improv</h1>');
-
         return $this->render('landing/index.html.twig', [ ]);
 
     }
