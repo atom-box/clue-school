@@ -7,12 +7,25 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class TimerViewController extends AbstractController
 {
+    private $timers;
+
     /**
      * @Route("/timer", name="timer")
      */
     public function showTimer(): Response
     {
-        return $this->render('timer/index.html.twig', [ ]);
+        $timers = [
+            [
+                "description" => "yogurt making",
+                "duration" => 6,
+            ],
+            [
+                "description" => "reading break: novel",
+                "duration" => 15,
+            ],
+        ];
+        
+        return $this->render('timer/index.html.twig', ['timers' => $timers]);
 
     }
 }

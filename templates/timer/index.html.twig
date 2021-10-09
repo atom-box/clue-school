@@ -37,10 +37,20 @@
 
         <h1>Evan's Progress Bar</h1>
             
-            <div id="myProgress">
-        <div id="myBar"></div>
-        </div>
+        {% for timer in timers %}
+            <div>
+                <p class="w3-wide" id="task1">
+                    [0:{{ timer.duration }}]  {{timer.description}}  
+                </p>
+                <div id="FOOOOOOBARRRRRR TODO">
+                    <div id="ALSOFOOOORARTODO"></div>
+                </div>
+            </div>
+        {% endfor %}
 
+        <div id="myProgress">
+    <div id="myBar"></div>
+</div>
         <br>
         <button onclick="move()">Click Me</button> 
 
