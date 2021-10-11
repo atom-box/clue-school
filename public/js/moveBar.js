@@ -10,6 +10,10 @@ document.addEventListener('DOMContentLoaded', function () {
             var minutes = barElement.getAttribute("minutes");
             console.log("MiNuTes are " + minutes);
             var pulse = minutes * 60000 / 100; // pulse is ms per percent-width
+            // uncomment NEXT 3 LINES for faster running during debugging
+            pulse /= 200;
+            const noticeEl = document.getElementById("debug-notice");
+            noticeEl.style.display = "block";
             var id = setInterval(frame, pulse);
             console.log(id);
             function frame() {

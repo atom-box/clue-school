@@ -64,69 +64,16 @@
 
 			{% endfor %}
 
-			<div>
-				<div></div>
-			</div>
+            <div class="w3-panel w3-pale-green w3-border" style="display: none" id="debug-notice">
+        <p>Debug mode: Timer is running at 200x speed</p>
+      </div>
 
 			<br>
 
 			{# ////////////////////////////// #}
-
-			<h3 class="w3-padding-16 w3-text-light-grey">
-				Get things done without thinking yet about the next thing
-			</h3>
-			<p class="w3-wide" id="task1">
-				[0:25]    Curling practice
-			</p>
-			<div class="w3-dark-grey">
-				<div class="w3-white" style="height:28px;width:95%"></div>
-			</div>
-			<p class="w3-wide" id="task2">
-				[0:35]    Vacuuming
-			</p>
-			<div class="w3-white">
-				<div class="w3-dark-grey" style="height:28px;width:85%"></div>
-			</div>
-			<p class="w3-wide" id="task3">
-				[0:10]    Take a break
-			</p>
-			<div class="w3-white">
-				<div class="w3-dark-grey" style="height:28px;width:80%"></div>
-				[0:20]    Emailing
-			</div>
-			<p class="w3-wide" id="task4"></p>
-			<div class="w3-white">
-				<div class="w3-dark-grey" style="height:28px;width:95%"></div>
-			</div>
-			<p class="w3-wide" id="task5">
-				[0:40]    Review yesterday's notes
-			</p>
-			<div class="w3-white">
-				<div class="w3-dark-grey" style="height:28px;width:95%"></div>
-			</div>
-			<p class="w3-wide" id="task6">
-				[0:15]    Lift
-			</p>
-			<div class="w3-white">
-				<div class="w3-dark-grey" style="height:28px;width:95%"></div>
-			</div>
-			<br/>
 <h2>
     [Form for entering new data will go here.]
 </h2>
-            <p>
-                {# Stop keeping track of what's next while you're doing what's now #}
-                Problem: Finally getting deep into a task and being inefficient in leaving that task.
-                <br/><br/>
-                Solution: This is a multi-pomodoro timer with a todo list to tell you what's next.
-            </p>
-
-			<p>
-                
-				This offloads the chore of what's next and when. A single pomodoro can do this but you have to keep a list next to it. For me, that wrecks part of what the Pomodoro is supposed to be doing.
-
-
-			</p>
 
 			{{ include('landing/_footer.html.twig') }}
 
