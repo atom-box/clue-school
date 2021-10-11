@@ -4,93 +4,134 @@
 
 <body class="w3-black">
 
-    {{ include('landing/_sidebar.html.twig') }}
+	{{ include('landing/_sidebar.html.twig') }}
 
-    <!-- Page Content -->
-    <div class="w3-padding-large" id="main">
-        <!-- Header/Home -->
-        <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
-            <h1 class="w3-jumbo">
-                <span class="w3-hide-small">
-                    The Boss of Me
-                </h1>
-                <p>
-                    {# Stop keeping track of what's next while you're doing what's now #}
-                    Focusing on now but knowing when to stop.
-                </p>
-            </header>
-
-
-{# ////////////////////////////// #}
-        <style>
-            #myProgress {
-                width: 100%;
-                background-color: #333;
-            }
-            
-            #myBar {
-                width: 1%;
-                height: 30px;
-                background-color: #000;
-            }
-            </style>
-
-        <h1>Evan's Progress Bar</h1>
-            
-        {% for timer in timers %}
-            <div>
-                <p class="w3-wide" id="task1">
-                    [0:{{ timer.duration }}]  {{timer.description}}  
-                </p>
-                <div id="FOOOOOOBARRRRRR TODO">
-                    <div id="ALSOFOOOORARTODO"></div>
-                </div>
-            </div>
-        {% endfor %}
-
-        <div id="myProgress">
-    <div id="myBar"></div>
-</div>
-        <br>
-        <button onclick="move()">Click Me</button> 
-
-{# ////////////////////////////// #}
+	<!-- Page Content -->
+	<div
+		class="w3-padding-large" id="main">
+		<!-- Header/Home -->
+		<header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+			<h1 class="w3-jumbo">
+				<span class="w3-hide-small">
+					The Boss of Me
+				</h1>
+            <p>
+                Press <i>play</i> to accept defaults and begin. Or enter a new list below.
+            </p>
+			</header>
 
 
-        <h3 class="w3-padding-16 w3-text-light-grey">Get things done without thinking yet about the next thing</h3>
-    <p class="w3-wide" id="task1">[0:25]    Curling practice  </p>
-    <div class="w3-dark-grey">
-      <div class="w3-white" style="height:28px;width:95%"></div>
-    </div>
-    <p class="w3-wide" id="task2">[0:35]    Vacuuming  </p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:85%"></div>
-    </div>
-    <p class="w3-wide" id="task3">[0:10]    Take a break  </p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:80%"></div>
-    </div>
-    <p class="w3-wide" id="task4">[0:20]    Emailing  </p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:95%"></div>
-    </div>
-<p class="w3-wide" id="task5">[0:40]    Review yesterday's notes  </p>
-<div class="w3-white">
-  <div class="w3-dark-grey" style="height:28px;width:95%"></div>
-</div>
-<p class="w3-wide" id="task6">[0:15]    Lift  </p>
-<div class="w3-white">
-  <div class="w3-dark-grey" style="height:28px;width:95%"></div>
-</div>
-<br/>
+			{# ////////////////////////////// #}
+			<style>
+				#myProgress {
+					width: 100%;
+					background-color: #333;
+				}
+
+				#myBar {
+					width: 1%;
+					height: 30px;
+					background-color: #000;
+				}
+			</style>
+
+			<div class="w3-bar">
+				<button class="w3-button w3-round-xxlarge w3-dark-gray w3-hover-green w3-left" id="start-timer">
+					<i class="fa fa-play" aria-hidden="true"></i>
+				</button>
+				<button class="w3-button w3-round-xxlarge w3-dark-gray w3-margin-left w3-hover-white w3-left"  id="pause-timer">
+					<i class="fa fa-pause" aria-hidden="true"></i>
+				</button>
+				<button class="w3-button w3-hover-red w3-right" onclick= 'alert("Remove all timers and start over!\nAre you sure?\n Todo: this button is not working yet actually.")' >Delete All</button>
+			</div>
+
+			{% for timer in timers %}
+				<div>
+					<p class="w3-wide" id="task1">
+						[0:
+						{{ timer.duration }}
+						]
+
+						{{ timer.description }}
+					</p>
+					<div class="w3-dark-grey">
+						<div class="w3-black" id="timer{{ timer.id }}" minutes="{{timer.duration}}" style="height:28px;width:0%">
+							timer{{ timer.id }}
+						</div>
+					</div>
+
+				</div>
+
+			{% endfor %}
+
+			<div>
+				<div></div>
+			</div>
+
+			<br>
+
+			{# ////////////////////////////// #}
+
+			<h3 class="w3-padding-16 w3-text-light-grey">
+				Get things done without thinking yet about the next thing
+			</h3>
+			<p class="w3-wide" id="task1">
+				[0:25]    Curling practice
+			</p>
+			<div class="w3-dark-grey">
+				<div class="w3-white" style="height:28px;width:95%"></div>
+			</div>
+			<p class="w3-wide" id="task2">
+				[0:35]    Vacuuming
+			</p>
+			<div class="w3-white">
+				<div class="w3-dark-grey" style="height:28px;width:85%"></div>
+			</div>
+			<p class="w3-wide" id="task3">
+				[0:10]    Take a break
+			</p>
+			<div class="w3-white">
+				<div class="w3-dark-grey" style="height:28px;width:80%"></div>
+				[0:20]    Emailing
+			</div>
+			<p class="w3-wide" id="task4"></p>
+			<div class="w3-white">
+				<div class="w3-dark-grey" style="height:28px;width:95%"></div>
+			</div>
+			<p class="w3-wide" id="task5">
+				[0:40]    Review yesterday's notes
+			</p>
+			<div class="w3-white">
+				<div class="w3-dark-grey" style="height:28px;width:95%"></div>
+			</div>
+			<p class="w3-wide" id="task6">
+				[0:15]    Lift
+			</p>
+			<div class="w3-white">
+				<div class="w3-dark-grey" style="height:28px;width:95%"></div>
+			</div>
+			<br/>
+<h2>
+    [Form for entering new data will go here.]
+</h2>
+            <p>
+                {# Stop keeping track of what's next while you're doing what's now #}
+                Problem: Finally getting deep into a task and being inefficient in leaving that task.
+                <br/><br/>
+                Solution: This is a multi-pomodoro timer with a todo list to tell you what's next.
+            </p>
+
+			<p>
+                
+				This offloads the chore of what's next and when. A single pomodoro can do this but you have to keep a list next to it. For me, that wrecks part of what the Pomodoro is supposed to be doing.
 
 
+			</p>
 
+			{{ include('landing/_footer.html.twig') }}
 
-                                            {{ include('landing/_footer.html.twig') }}
+			<!-- END PAGE CONTENT -->
+		</div>
 
-                                        <!-- END PAGE CONTENT -->
-                                        </div>
-
-                                    </body>
-                                    
+	</body>
+</body>

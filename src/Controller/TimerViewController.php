@@ -18,10 +18,12 @@ class TimerViewController extends AbstractController
             [
                 "description" => "yogurt making",
                 "duration" => 6,
+                "id" => 1,
             ],
             [
                 "description" => "reading break: novel",
                 "duration" => 15,
+                "id" => 2,
             ],
         ];
         
