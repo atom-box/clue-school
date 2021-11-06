@@ -18,8 +18,8 @@ This is a studying app.  You start by pasting in a reading passage you want to d
 
 What's a good way to take Cornell Notes? This! ZumTum Cornell Notes was my previous app to do this.
 
-This is about 20% built.
+This is only half built.
 
 ## Check it out
-This should all be done around Halloween.  The site is [https://clue.school](https://clue.school) 
+I thought the rest of the site would be written during October but October turned into a full on job search month. The partially built site can be viewed at [https://clue.school](https://clue.school) 
 
